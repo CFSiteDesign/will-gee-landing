@@ -387,7 +387,7 @@ export default function Index() {
               { q: "Can I skip activities if I want to relax?", a: "Absolutely. While group activities are included, you're free to opt out of anything and enjoy free time instead." },
               { q: "What if I get sick or injured?", a: "Travel insurance is mandatory. Hosts and local staff will assist you in accessing medical care if needed, but medical costs are your responsibility and must be covered by insurance." },
               { q: "Will there be WiFi?", a: "Yes — all Mad Monkey locations have WiFi, though speeds may vary depending on island location." },
-              { q: "Is there a payment plan available?", a: "Yes. You pay a £200 deposit, followed by two instalments of £200 each. Total cost is £600. All payment deadlines will be shared after booking. Missed payments may result in your spot being released." },
+              { q: "Is there a payment plan available?", a: "Yes. You pay a £233.10 deposit by 09/08/2026, followed by two instalments of £233.10 — due 23/08/2026 and 30/08/2026. Total cost is £700. Missed payments may result in your spot being released." },
               { q: "Is there a minimum number of travellers required?", a: "All trips require a minimum of 12 confirmed travellers to be officially confirmed. If this minimum is not met by the deposit deadline, the trip will be cancelled and all payments will be fully refunded." },
               { q: "What is the cancellation policy?", a: "If you cancel before the trip is confirmed, you'll receive a full refund of your deposit. If you cancel after the trip is confirmed, all payments are non-refundable. We strongly recommend travel insurance with 'Cancel for Any Reason' (CFAR) coverage." },
             ].map((faq, i) => (
