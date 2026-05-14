@@ -330,10 +330,11 @@ export default function Index() {
           </div>
           <div className="space-y-4">
             {[
-              { step: '1', title: 'Pay Your Deposit', desc: 'Pay your £200 deposit via the booking link by 22 April.' },
+              { step: '1', title: 'Pay Your Deposit', desc: 'Pay your £233.10 deposit via the booking link by 09/08/2026.' },
               { step: '2', title: 'Join the Crew', desc: "Once deposited, you'll be added to the private WhatsApp group for pre-trip banter and packing tips." },
-              { step: '3', title: 'Wait for the "GO"', desc: 'As soon as we hit 12 bookings, we\'ll blast the group chat to confirm the takeover is ON.' },
-              { step: '4', title: 'Book Your Flights', desc: 'Do not book flights until the 12-person minimum is officially confirmed!' },
+              { step: '3', title: 'Wait for the "GO"', desc: 'As soon as we hit 12 confirmed travellers (by 09/08), we\'ll blast the group chat to confirm the takeover is ON.' },
+              { step: '4', title: 'Pay Your Instalments', desc: 'Instalment 1 of £233.10 due 23/08/2026. Instalment 2 of £233.10 due 30/08/2026. Total trip cost £700.' },
+              { step: '5', title: 'Book Your Flights', desc: 'Do not book flights until the 12-person minimum is officially confirmed!' },
             ].map((s, i) => (
               <div key={i} className="flex items-start gap-4 bg-muted border border-border rounded-2xl p-6">
                 <div className="w-10 h-10 rounded-full bg-brand-red text-primary-foreground flex items-center justify-center font-black text-lg shrink-0">
