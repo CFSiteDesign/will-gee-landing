@@ -161,7 +161,7 @@ export default function Index() {
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm sm:text-base">
            <div className="flex items-center gap-2">
               <Clock className="text-brand-red shrink-0" size={18} />
-               <span className="font-black">14 Days</span>
+               <span className="font-black">15 Days</span>
                <span className="text-muted-foreground">of adventure</span>
             </div>
             <span className="hidden sm:inline text-brand-red font-bold">•</span>
