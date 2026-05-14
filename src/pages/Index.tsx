@@ -179,7 +179,7 @@ export default function Index() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight mb-4 font-display">The <span className="text-brand-teal">Route</span></h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">14 days of islands, adventure, and incredible vibes across Indonesia's best spots.</p>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">15 days of islands, adventure, and incredible vibes across Indonesia's best spots.</p>
           </div>
 
           <div className="space-y-8">
