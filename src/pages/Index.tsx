@@ -132,7 +132,7 @@ export default function Index() {
             </h1>
           
            <p className="text-4xl md:text-6xl font-black tracking-tight mb-6 font-display drop-shadow-xl text-primary-foreground">
-             MAY 18 - JUN 1
+             SEP 6 - 21
            </p>
 
           <div className="flex justify-center gap-4 mb-8">
