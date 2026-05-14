@@ -140,7 +140,7 @@ export default function Index() {
               <Instagram size={16} /> @will.gee11
             </a>
             <a href="https://tiktok.com/@willgeeeeee" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 bg-primary-foreground/20 hover:bg-primary-foreground/30 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-medium transition-colors">
-              <TikTokIcon /> @will.gee11
+              <TikTokIcon /> @willgeeeeee
             </a>
           </div>
 
