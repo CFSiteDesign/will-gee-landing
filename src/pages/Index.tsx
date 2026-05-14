@@ -333,16 +333,41 @@ export default function Index() {
               { step: '1', title: 'Pay Your Deposit', desc: 'Pay your £233.10 deposit via the booking link by 09/08/2026.' },
               { step: '2', title: 'Join the Crew', desc: "Once deposited, you'll be added to the private WhatsApp group for pre-trip banter and packing tips." },
               { step: '3', title: 'Wait for the "GO"', desc: 'As soon as we hit 12 confirmed travellers (by 09/08), we\'ll blast the group chat to confirm the takeover is ON.' },
-              { step: '4', title: 'Pay Your Instalments', desc: 'Instalment 1 of £233.10 due 23/08/2026. Instalment 2 of £233.10 due 30/08/2026. Total trip cost £700.' },
+              {
+                step: '4',
+                title: 'Pay Your Instalments',
+                rows: [
+                  { label: 'Instalment 1', amount: '£233.10', due: '23/08/2026' },
+                  { label: 'Instalment 2', amount: '£233.10', due: '30/08/2026' },
+                ],
+                footer: 'Total trip cost: £700',
+              },
               { step: '5', title: 'Book Your Flights', desc: 'Do not book flights until the 12-person minimum is officially confirmed!' },
-            ].map((s, i) => (
+            ].map((s: any, i) => (
               <div key={i} className="flex items-start gap-4 bg-muted border border-border rounded-2xl p-6">
                 <div className="w-10 h-10 rounded-full bg-brand-red text-primary-foreground flex items-center justify-center font-black text-lg shrink-0">
                   {s.step}
                 </div>
-                <div>
+                <div className="flex-1 min-w-0">
                   <h4 className="text-lg font-black uppercase mb-1">{s.title}</h4>
-                  <p className="text-sm text-muted-foreground">{s.desc}</p>
+                  {s.desc && <p className="text-sm text-muted-foreground">{s.desc}</p>}
+                  {s.rows && (
+                    <div className="mt-3 divide-y divide-border rounded-xl border border-border bg-card overflow-hidden">
+                      {s.rows.map((r: any, j: number) => (
+                        <div key={j} className="flex items-center justify-between gap-3 px-4 py-3 text-sm">
+                          <span className="font-bold uppercase tracking-wide">{r.label}</span>
+                          <span className="font-black text-brand-red">{r.amount}</span>
+                          <span className="text-muted-foreground font-medium tabular-nums">Due {r.due}</span>
+                        </div>
+                      ))}
+                      {s.footer && (
+                        <div className="flex items-center justify-between gap-3 px-4 py-3 text-sm bg-muted">
+                          <span className="font-black uppercase tracking-wide">Total trip cost</span>
+                          <span className="font-black text-brand-red">£700</span>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
