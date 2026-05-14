@@ -39,52 +39,53 @@ export default function Index() {
   const locations = [
     {
       name: 'Uluwatu',
-      daysLabel: 'Days 1-3',
-      duration: '3 Days (May 18-20)',
+      daysLabel: 'Days 1-4',
+      duration: '4 Days (Sep 6-9)',
       img: heroImg,
-      desc: "Your adventure starts at Mad Monkey Uluwatu. Meet the crew at welcome drinks, catch a surf lesson, and gear up for ATV adventures and Wasted Wednesdays.",
+      desc: "Your adventure starts at Mad Monkey Uluwatu. Welcome sunsets, surf lessons, sunrise treks, and live DJ nights to set the tone.",
       highlights: [
-        'Day 1 — Arrive at DPS Airport. Welcome drinks & Pub Quiz',
-        'Day 2 — Surf lesson at Balangan Beach + Fire Dance',
-        'Day 3 — Bukit Sari ATV Adventure + Wasted Wednesdays (Live DJ 8-11pm)',
+        'Day 1 (06/09) — Arrive at DPS Airport. Transfer to Mad Monkey Uluwatu. Welcome Sunset (5PM-7:30PM) at Panorama Point',
+        'Day 2 (07/09) — Surf Lesson (9AM-11AM) + Fire Show',
+        'Day 3 (08/09) — Mt Batur Sunrise Trekking (1:30AM-11AM). Sauna, hot tub & ice baths',
+        'Day 4 (09/09) — Live DJ + Free Flow (8PM-11PM)',
       ],
     },
     {
       name: 'Nusa Lembongan',
-      daysLabel: 'Days 4-6',
-      duration: '3 Days (May 21-23)',
+      daysLabel: 'Days 5-6',
+      duration: '2 Days (Sep 10-11)',
       img: nusaLembonganImg,
-      desc: "Hop on a fast boat to the island paradise of Nusa Lembongan. Cliff jumping, pontoon bars, and turquoise waters await.",
+      desc: "Hop on a fast boat to the island paradise of Nusa Lembongan. Island hopping, pool parties, and turquoise waters.",
       highlights: [
-        'Day 4 — Taxi to Sanur, 30-min fast boat to Mad Monkey Nusa Lembongan',
-        'Day 5 — Pontoon Lago bar & cliff jumping at Blue Lagoon (moped around the island)',
-        'Day 6 — Hostel facilities: Ice baths, saunas, gym & luxury pool',
+        'Day 5 (10/09) — Taxi to Sanur, 30-min fast boat to Mad Monkey Nusa Lembongan. Ice baths, sauna, gym & luxury pool',
+        'Day 6 (11/09) — Island Hopping around Nusa Penida (8:30AM-5PM) + Mad Monkey Pool Party (6PM-10PM)',
       ],
     },
     {
       name: 'Gili Trawangan',
-      daysLabel: 'Days 7-10',
-      duration: '4 Days (May 24-27)',
+      daysLabel: 'Days 7-9',
+      duration: '3 Days (Sep 12-14)',
       img: giliTImg,
-      desc: "The legendary Gili T. Boat parties, snorkelling, foam parties, sunset swings — this is where the magic happens.",
+      desc: "The legendary Gili T. Boat parties, snorkelling, beach volleyball, and a free day to explore.",
       highlights: [
-        'Day 7 — Fast boat to Gili T, check into Mad Monkey',
-        'Day 8 — "Monkey Sea, Monkey Do" Snorkeling + Sunset swings + Mexican family dinner',
-        'Day 9 — Foam Party with Live DJ + Ping Pong Tournament',
-        'Day 10 — Boat Party #2: The legendary Mad Monkey Boat Party 🚤',
+        'Day 7 (12/09) — Early fast boat to Gili T. Mad Monkey Boat Party (2PM-6PM) + Unlimited BBQ & Drinks',
+        'Day 8 (13/09) — Monkey Sea Monkey Do snorkelling tour (10:30AM-4PM) + Beach Volleyball Tournament & Live DJ (3PM-7PM)',
+        'Day 9 (14/09) — Free day mid-trip to explore Gili T',
       ],
     },
     {
-      name: 'Kuta Lombok & Saleh Bay',
-      daysLabel: 'Days 11-14',
-      duration: '4 Days (May 28-Jun 1)',
+      name: 'Kuta Lombok',
+      daysLabel: 'Days 10-15',
+      duration: '6 Days (Sep 15-21)',
       img: kutaLombokImg,
-      desc: "Head to Lombok for the grand finale — a 2-day Manta Ray expedition in Saleh Bay, surf lessons, and a farewell before heading home.",
+      desc: "Head to Lombok for the grand finale — waterfalls, surf lessons, BBQ free-flows, and a chilled farewell.",
       highlights: [
-        'Day 11 — Short boat to Lombok, shuttle to Mad Monkey Kuta Lombok',
-        'Day 12 — Depart on the 2D/1N Manta Ray expedition ',
-        'Day 13 — Sunrise swim with manta rays, return to Kuta',
-        'Day 14 — Surf lessons at Selong Belanak, then 30-min shuttle to Lombok Airport (LOP)',
+        'Day 10 (15/09) — Short boat to Lombok mainland, shuttle to Mad Monkey Kuta Lombok',
+        'Day 11 (16/09) — Lombok Signature Waterfall Tour (10AM-5PM)',
+        'Day 12 (17/09) — Relax and explore Kuta',
+        'Day 13 (19/09) — Surf lesson (9AM-12PM)',
+        'Day 14 (20/09) — Surf lesson (9AM-12PM) + BBQ & Free Flow',
+        'Day 15 (21/09) — Recovery breakfast + 30-min shuttle to Lombok Airport (LOP)',
       ],
     },
   ];
@@ -131,7 +132,7 @@ export default function Index() {
             </h1>
           
            <p className="text-4xl md:text-6xl font-black tracking-tight mb-6 font-display drop-shadow-xl text-primary-foreground">
-             MAY 18 - JUN 1
+             SEP 6 - 21
            </p>
 
           <div className="flex justify-center gap-4 mb-8">
@@ -160,7 +161,7 @@ export default function Index() {
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm sm:text-base">
            <div className="flex items-center gap-2">
               <Clock className="text-brand-red shrink-0" size={18} />
-               <span className="font-black">14 Days</span>
+               <span className="font-black">15 Days</span>
                <span className="text-muted-foreground">of adventure</span>
             </div>
             <span className="hidden sm:inline text-brand-red font-bold">•</span>
@@ -178,7 +179,7 @@ export default function Index() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight mb-4 font-display">The <span className="text-brand-teal">Route</span></h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">14 days of islands, adventure, and incredible vibes across Indonesia's best spots.</p>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">15 days of islands, adventure, and incredible vibes across Indonesia's best spots.</p>
           </div>
 
           <div className="space-y-8">
@@ -329,10 +330,11 @@ export default function Index() {
           </div>
           <div className="space-y-4">
             {[
-              { step: '1', title: 'Pay Your Deposit', desc: 'Pay your £200 deposit via the booking link by 22 April.' },
+              { step: '1', title: 'Pay Your Deposit', desc: 'Pay your £233.10 deposit via the booking link by 09/08/2026.' },
               { step: '2', title: 'Join the Crew', desc: "Once deposited, you'll be added to the private WhatsApp group for pre-trip banter and packing tips." },
-              { step: '3', title: 'Wait for the "GO"', desc: 'As soon as we hit 12 bookings, we\'ll blast the group chat to confirm the takeover is ON.' },
-              { step: '4', title: 'Book Your Flights', desc: 'Do not book flights until the 12-person minimum is officially confirmed!' },
+              { step: '3', title: 'Wait for the "GO"', desc: 'As soon as we hit 12 confirmed travellers (by 09/08), we\'ll blast the group chat to confirm the takeover is ON.' },
+              { step: '4', title: 'Pay Your Instalments', desc: 'Instalment 1 of £233.10 due 23/08/2026. Instalment 2 of £233.10 due 30/08/2026. Total trip cost £700.' },
+              { step: '5', title: 'Book Your Flights', desc: 'Do not book flights until the 12-person minimum is officially confirmed!' },
             ].map((s, i) => (
               <div key={i} className="flex items-start gap-4 bg-muted border border-border rounded-2xl p-6">
                 <div className="w-10 h-10 rounded-full bg-brand-red text-primary-foreground flex items-center justify-center font-black text-lg shrink-0">
@@ -385,7 +387,7 @@ export default function Index() {
               { q: "Can I skip activities if I want to relax?", a: "Absolutely. While group activities are included, you're free to opt out of anything and enjoy free time instead." },
               { q: "What if I get sick or injured?", a: "Travel insurance is mandatory. Hosts and local staff will assist you in accessing medical care if needed, but medical costs are your responsibility and must be covered by insurance." },
               { q: "Will there be WiFi?", a: "Yes — all Mad Monkey locations have WiFi, though speeds may vary depending on island location." },
-              { q: "Is there a payment plan available?", a: "Yes. You pay a £200 deposit, followed by two instalments of £200 each. Total cost is £600. All payment deadlines will be shared after booking. Missed payments may result in your spot being released." },
+              { q: "Is there a payment plan available?", a: "Yes. You pay a £233.10 deposit by 09/08/2026, followed by two instalments of £233.10 — due 23/08/2026 and 30/08/2026. Total cost is £700. Missed payments may result in your spot being released." },
               { q: "Is there a minimum number of travellers required?", a: "All trips require a minimum of 12 confirmed travellers to be officially confirmed. If this minimum is not met by the deposit deadline, the trip will be cancelled and all payments will be fully refunded." },
               { q: "What is the cancellation policy?", a: "If you cancel before the trip is confirmed, you'll receive a full refund of your deposit. If you cancel after the trip is confirmed, all payments are non-refundable. We strongly recommend travel insurance with 'Cancel for Any Reason' (CFAR) coverage." },
             ].map((faq, i) => (
