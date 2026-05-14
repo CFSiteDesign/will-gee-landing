@@ -354,16 +354,20 @@ export default function Index() {
                   {s.rows && (
                     <div className="mt-3 divide-y divide-border rounded-xl border border-border bg-card overflow-hidden">
                       {s.rows.map((r: any, j: number) => (
-                        <div key={j} className="flex items-center justify-between gap-3 px-4 py-3 text-sm">
-                          <span className="font-bold uppercase tracking-wide">{r.label}</span>
-                          <span className="font-black text-brand-red">{r.amount}</span>
-                          <span className="text-muted-foreground font-medium tabular-nums">Due {r.due}</span>
+                        <div key={j} className="px-4 py-3 text-sm">
+                          <div className="flex items-center justify-between gap-3">
+                            <span className="font-bold uppercase tracking-wide">{r.label}</span>
+                            <span className="font-black text-brand-red text-base">{r.amount}</span>
+                          </div>
+                          <div className="text-xs text-muted-foreground font-medium tabular-nums mt-1">
+                            Due {r.due}
+                          </div>
                         </div>
                       ))}
                       {s.footer && (
-                        <div className="flex items-center justify-between gap-3 px-4 py-3 text-sm bg-muted">
-                          <span className="font-black uppercase tracking-wide">Total trip cost</span>
-                          <span className="font-black text-brand-red">£700</span>
+                        <div className="flex items-center justify-between gap-3 px-4 py-3 bg-muted">
+                          <span className="font-black uppercase tracking-wide text-sm">Total</span>
+                          <span className="font-black text-brand-red text-lg">£700</span>
                         </div>
                       )}
                     </div>
