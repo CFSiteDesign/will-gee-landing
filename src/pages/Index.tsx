@@ -337,6 +337,7 @@ export default function Index() {
                 step: '4',
                 title: 'Pay Your Instalments',
                 rows: [
+                  { label: 'Deposit', amount: '£233.10', due: '09/08/2026' },
                   { label: 'Instalment 1', amount: '£233.10', due: '23/08/2026' },
                   { label: 'Instalment 2', amount: '£233.10', due: '30/08/2026' },
                 ],
