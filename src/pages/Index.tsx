@@ -45,7 +45,7 @@ export default function Index() {
       desc: "Your adventure starts at Mad Monkey Uluwatu. Welcome sunsets, surf lessons, sunrise treks, and live DJ nights to set the tone.",
       highlights: [
         'Day 1 (06/09) — Arrive at DPS Airport. Transfer to Mad Monkey Uluwatu. Welcome Sunset (5PM-7:30PM) at Panorama Point',
-        'Day 2 (07/09) — Surf Lesson (9AM-11AM) + Fire Show',
+        'Day 2 (07/09) — Surf Lesson (9AM-11AM)',
         'Day 3 (08/09) — Mt Batur Sunrise Trekking (1:30AM-11AM). Sauna, hot tub & ice baths',
         'Day 4 (09/09) — Live DJ + Free Flow (8PM-11PM)',
       ],
